@@ -178,7 +178,8 @@ def phonenumbers():
         from phonenumbers import geocoder, timezone, carrier
 
         print("Gunakan +62, +91, +994, dll. , contoh +621234567890")
-        noTelp=input("Masukan Nomor Telepon : ")
+        noTelp=input("+6282150821126" \
+        " : ")
 
 
         noTelp=phonenumbers.parse(noTelp)
@@ -231,11 +232,12 @@ def infoga(opt):
     getpass(space+"press enter for back to previous menu ")
     menu()
 
-def phoneinfo():
+def  phoneinfo():
     no = str(input(f"{space}{b}>{w} enter number:{b} "))
     if not no: menu()
     print(w+lines)
-    url = "https://api.veriphone.io/v2/verify?phone={}&key=5F3F2D6300E445DEA88684053144966C"
+    url = "h" \
+    "h"
     req = requests.get(url.format(no))
     res = json.loads(req.text)
     print(f"{space}{B} DONE {R} {no} {w}")
